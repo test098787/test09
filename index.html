@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鈔好貸</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="鈔好貸 Logo" class="logo">
+    </header>
+
+    <main class="container">
+        <h2 class="title">鈔好貸</h2>
+
+        <div class="loan-section">
+            <div class="loan-details">
+                <h3 class="loan-amount">資金金額</h3>
+                <p class="amount">台幣 <span id="loanAmount">10000</span>.0</p>
+                <input type="range" class="slider" id="loanSlider" value="10000" min="5000" max="50000" step="1000" oninput="updateLoanDetails()">
+            </div>
+
+            <div class="repayment-details">
+                <p>分期付款期限: <span id="loanTerm">24 月</span></p>
+                <p>每月還款: 台幣 <span id="monthlyRepayment">600</span>.0</p>
+                <p>最高年利率: <span id="interestRate">9.0%</span></p>
+            </div>
+
+            <button class="apply-btn">立即申請</button>
+        </div>
+
+        <div class="why-choose-us">
+            <h3>為什麼選擇我們</h3>
+            <ul>
+                <li><img src="images/icon1.png" alt="icon"> 高批準率</li>
+                <li><img src="icon2.png" alt="icon"> 快捷簡便的程序</li>
+                <li><img src="icon3.png" alt="icon"> 6小時內送達現金</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <a href="#" class="nav-item">主頁</a>
+            <a href="#" class="nav-item">優惠</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
